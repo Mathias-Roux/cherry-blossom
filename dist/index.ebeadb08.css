@@ -1,0 +1,32 @@
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  z-index: -1;
+  background: #fff4f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background: red;
+}
+
+section {
+  background: #00f;
+}
+
+footer {
+  width: 100%;
+  background: green;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.ebeadb08.css.map */

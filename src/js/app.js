@@ -3,7 +3,7 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 const ctx = canvas.getContext('2d')
 
-const TOTAL = 20
+const TOTAL = 10
 const petalArray = []
 
 const petalImg = new Image()
@@ -30,11 +30,11 @@ let mouseX = 0
 const touchHandler = (e) => {
 	mouseX = (e.clientX || e.touches[0].clientX) / window.innerWidth
 }
-window.addEventListener('mousemove' touchHandler)
-window.addEventListener('touchmove' touchHandler)
+window.addEventListener('mousemove', touchHandler)
+window.addEventListener('touchmove', touchHandler)
 
 
-class Petal() {
+class Petal {
 	constructor() {
 		this.x = Math.random() * canvas.width
 		this.y = (Math.random() * canvas.height * 2) - canvas.height
@@ -45,15 +45,15 @@ class Petal() {
 
 		this.xSpeed = 1.5 + Math.random() * 2
 		this.ySpeed = 1 + Math.random() * 1
-		this.flipSpeed = math.random() * 0.03
+		this.flipSpeed = Math.random() * 0.03
 	}
 
 	draw() {
 		if (this.y > canvas.height || this.x > canvas.width) {
 			this.x = -petalImg.width
 			this.y = (Math.random() * canvas.height * 2) - canvas.height
-			this.xSpeed = 1.5 + math.random() * 2
-			this.ySpeed = 1 + math.random() * 1
+			this.xSpeed = 1.5 + Math.random() * 2
+			this.ySpeed = 1 + Math.random() * 1
 			this.flip = Math.random()
 		}
 		ctx.globalAlpha = this.opacity
