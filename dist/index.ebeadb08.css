@@ -23,10 +23,46 @@ section {
 
 footer {
   width: 100%;
-  background: green;
-  position: sticky;
-  bottom: 0;
-  left: 0;
+  height: 300px;
+}
+
+.footerWrap {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.signature {
+  position: relative;
+}
+
+path {
+  isolation: isolate;
+}
+
+.name {
+  mix-blend-mode: difference;
+  color: #000;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+
+.socials {
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.social a {
+  color: #000;
+  text-decoration: none;
+}
+
+.social a:visited {
+  color: #000;
 }
 
 /*# sourceMappingURL=index.ebeadb08.css.map */
