@@ -1,4 +1,4 @@
-{ 
+{
   "name": "parcel-boilerplate",
   "description": "boilerplate parcel, gsap, splittingjs",
   "scripts": {
@@ -8,9 +8,13 @@
     "build": "npm run clean && npm run build:parcel"
   },
   "devDependencies": {
-    "parcel": "^2.5.0"
+    "buffer": "^6.0.3",
+    "parcel": "^2.5.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.1",
+    "@splinetool/runtime": "^0.9.57",
     "gsap": "^3.10.4",
     "splitting": "^1.0.6"
   }

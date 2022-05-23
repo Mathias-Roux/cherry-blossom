@@ -74,8 +74,22 @@
 // 	}
 // }
 
+//Date
+
 const date = new Date()
 
 document.querySelector('.date > span').innerHTML = date.toDateString()
 
+//Date
+
+//Spline
+	
+import { Application } from '@splinetool/runtime';
+
+const canvas = document.getElementById('canvas3d');
+const app = new Application(canvas);
+app.load('https://prod.spline.design/OtYEBTIMtsrepoZW/scene.splinecode');
+
+
+//Spline
 
