@@ -63,14 +63,9 @@ section{
 	font-size: clamp(20px, 3vw, 90px);
 }
 
-.spline-wrapper{
-	width: 80vw;
-	margin: 0 auto;
-}
 
 #canvas-3d{
-	width: 100%;
-	height: 100%;
+	margin: 0 auto;
 }
 
 /*Footer*/
