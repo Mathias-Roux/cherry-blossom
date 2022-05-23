@@ -68,6 +68,28 @@ section{
 	margin: 0 auto;
 }
 
+.gallerie{
+	display: flex;
+	height: 300px;
+}
+
+.gallerie__item{
+	width: 700px;
+	position: relative;
+	background-position: center;
+}
+
+.gallerie__item:hover{
+	padding: 20px;
+}
+
+.gallerie__caption{
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}
+
 /*Footer*/
 
 footer{

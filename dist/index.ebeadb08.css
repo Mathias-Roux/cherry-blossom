@@ -59,6 +59,28 @@ section {
   margin: 0 auto;
 }
 
+.gallerie {
+  height: 300px;
+  display: flex;
+}
+
+.gallerie__item {
+  width: 700px;
+  background-position: center;
+  position: relative;
+}
+
+.gallerie__item:hover {
+  padding: 20px;
+}
+
+.gallerie__caption {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
 footer {
   height: 60px;
   padding: 10px;
