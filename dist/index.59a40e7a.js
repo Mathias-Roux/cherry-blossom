@@ -43214,7 +43214,7 @@ _gsap.gsap.to(".gallerie", {
     scrollTrigger: {
         trigger: ".gallerie",
         start: "top top",
-        end: ()=>innerWidth * 3
+        end: ()=>innerWidth * 2
         ,
         scrub: true,
         pin: true,
