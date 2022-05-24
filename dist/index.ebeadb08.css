@@ -60,23 +60,31 @@ section {
 }
 
 #canvas3d {
+  margin-bottom: 50px;
   transform: translate(-12vw);
   height: 90vw !important;
   width: 125vw !important;
 }
 
 .gallerie {
-  width: 150vw;
-  height: 100vh;
-  margin-left: 30px;
-  display: flex;
+  width: 85vw;
+  margin: 0 auto;
 }
 
 .gallerie__item {
-  min-width: 80vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.gallerie__item--img {
+  width: 100%;
+}
+
+.gallerie__item--caption {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
 }
 
 footer {

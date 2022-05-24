@@ -1,20 +1,20 @@
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+const items = document.querySelectorAll('.gallerie__item--img')
 
 
-gsap.to(".gallerie", {
-  xPercent: -100, 
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".gallerie",
-    start: "top top",
-    end: () => innerWidth * 2,
-    scrub: true,
-    pin: true,
-    markers: true,
-    invalidateOnRefresh: true,
-    anticipatePin: 1
-  }
-});
+items.forEach(item => {
+  item.addEventListener('mouseenter', (event) => {
+    gsap.timeline({
+      defaults: {duration: 2.4, ease: 'expo'}
+    })
+    .to(item, {scale: 0.95, borderRadius: "10%"}, 0)
+  })
+
+  item.addEventListener('mouseleave', (event) => {
+    gsap.timeline({
+      defaults: {duration: 2.4, ease: 'expo'}
+    })
+    .to(item, {scale: 1, borderRadius: "0"}, 0)
+  })
+})
