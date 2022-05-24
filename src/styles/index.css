@@ -75,30 +75,19 @@ section{
 
 .gallerie{
 	width: 80vw;
+	height: 40vh;
 	margin: 0 auto 40px auto;
 	position: relative;
 }
 
 .gallerie__item{
+	
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 60vw;
 }
 
-
-.gallerie__item:not(.bird) {
-	position: absolute;
-	bottom: 0;
-}
-
-.temple{
-	z-index: 100;
-}
-
-.usa{
-	z-index: 200;
-}
 
 
 /*Section*/

@@ -67,6 +67,7 @@ section {
 
 .gallerie {
   width: 80vw;
+  height: 40vh;
   margin: 0 auto 40px;
   position: relative;
 }
@@ -76,19 +77,6 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-.gallerie__item:not(.bird) {
-  position: absolute;
-  bottom: 0;
-}
-
-.temple {
-  z-index: 100;
-}
-
-.usa {
-  z-index: 200;
 }
 
 .blank {
