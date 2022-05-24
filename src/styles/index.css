@@ -75,26 +75,22 @@ section{
 
 .gallerie{
 	width: 80vw;
-	height: 40vh;
+	height: 60vh;
 	margin: 0 auto 40px auto;
-	position: relative;
+	display: flex;
 }
 
-.gallerie__item{
-	
+.gallerie__item{	
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 60vw;
+	min-width: 80vw;
 }
+
 
 
 
 /*Section*/
-
-.blank{
-	height: 2000px;
-}
 
 
 /*Footer*/

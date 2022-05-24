@@ -67,20 +67,16 @@ section {
 
 .gallerie {
   width: 80vw;
-  height: 40vh;
+  height: 60vh;
   margin: 0 auto 40px;
-  position: relative;
+  display: flex;
 }
 
 .gallerie__item {
-  height: 60vw;
+  min-width: 80vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-.blank {
-  height: 2000px;
 }
 
 footer {
