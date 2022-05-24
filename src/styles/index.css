@@ -74,8 +74,8 @@ section{
 }
 
 .gallerie{
-	width: 80vw;
-	height: 60vh;
+	width: 200vw;
+	height: 100vh;
 	margin: 0 auto 40px auto;
 	display: flex;
 }
