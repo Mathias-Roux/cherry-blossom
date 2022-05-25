@@ -80,7 +80,6 @@ section{
 }
 
 .gallerie__item{
-	width: 100%;
 	margin-bottom: 40px;
 	position: relative;
 }
@@ -91,8 +90,8 @@ section{
 
 .gallerie__item--caption{
 	position: absolute;
-	bottom: 5%;
-	left: 45%;
+	bottom: 0;
+	left: 8%;
 }
 
 

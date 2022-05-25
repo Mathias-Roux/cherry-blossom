@@ -43207,7 +43207,8 @@ exports.export = function(dest, destName, get) {
 },{}],"8dtAy":[function(require,module,exports) {
 var _gsap = require("gsap");
 const items = document.querySelectorAll('.gallerie__item--img');
-items.forEach((item)=>{
+const captions = document.querySelectorAll('.gallerie__item--caption');
+items.forEach((item, index)=>{
     item.addEventListener('mouseenter', (event)=>{
         _gsap.gsap.timeline({
             defaults: {
@@ -43215,9 +43216,12 @@ items.forEach((item)=>{
                 ease: 'expo'
             }
         }).to(item, {
-            scale: 0.95,
-            borderRadius: "10%"
-        }, 0);
+            scale: 0.90,
+            borderRadius: "5%"
+        }, 0).to(captions[index], {
+            opacity: 1,
+            y: 0
+        });
     });
     item.addEventListener('mouseleave', (event)=>{
         _gsap.gsap.timeline({
@@ -43228,7 +43232,10 @@ items.forEach((item)=>{
         }).to(item, {
             scale: 1,
             borderRadius: "0"
-        }, 0);
+        }, 0).to(captions[index], {
+            opacity: 0,
+            y: '-100%'
+        });
     });
 });
 
