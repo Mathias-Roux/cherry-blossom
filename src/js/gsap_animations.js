@@ -6,10 +6,10 @@ const captions = document.querySelectorAll('.gallerie__item--caption')
 items.forEach((item, index) => {
   item.addEventListener('mouseenter', (event) => {
     gsap.timeline({
-      defaults: {duration: 2.4, ease: 'expo'}
+      defaults: {duration: 1, ease: 'expo'}
     })
     .to(item, {scale: 0.90, borderRadius: "5%"}, 0)
-    .to(captions[index], {opacity: 1, y: 0})
+    .to(captions[index], {opacity: 1, y: 0}, 0)
   })
 
   item.addEventListener('mouseleave', (event) => {
@@ -17,6 +17,6 @@ items.forEach((item, index) => {
       defaults: {duration: 2.4, ease: 'expo'}
     })
     .to(item, {scale: 1, borderRadius: "0"}, 0)
-    .to(captions[index], {opacity: 0, y: '-100%'})
+    .to(captions[index], {opacity: 0, y: '-100%'}, 0)
   })
 })

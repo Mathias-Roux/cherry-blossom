@@ -43212,7 +43212,7 @@ items.forEach((item, index)=>{
     item.addEventListener('mouseenter', (event)=>{
         _gsap.gsap.timeline({
             defaults: {
-                duration: 2.4,
+                duration: 1,
                 ease: 'expo'
             }
         }).to(item, {
@@ -43221,7 +43221,7 @@ items.forEach((item, index)=>{
         }, 0).to(captions[index], {
             opacity: 1,
             y: 0
-        });
+        }, 0);
     });
     item.addEventListener('mouseleave', (event)=>{
         _gsap.gsap.timeline({
@@ -43235,7 +43235,7 @@ items.forEach((item, index)=>{
         }, 0).to(captions[index], {
             opacity: 0,
             y: '-100%'
-        });
+        }, 0);
     });
 });
 

@@ -92,6 +92,8 @@ section{
 	position: absolute;
 	bottom: 0;
 	left: 8%;
+	opacity: 0;
+	z-index: -100;
 }
 
 
