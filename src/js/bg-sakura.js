@@ -3,7 +3,7 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 const ctx = canvas.getContext('2d')
 
-const TOTAL = 10
+const TOTAL = 5
 const petalArray = []
 
 const petalImg = new Image()
